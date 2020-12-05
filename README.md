@@ -3,3 +3,4 @@
 1. Исходная матрица `baseArr` м.б. любого размера;
 2. Новая матрица `newArr` масштабируется в любой разумный размер;
 3. Коэффициент масштабирования задается при вызове функции `scaledArr(arr, scale);`
+4. Проект на gh-pages: https://litvinenko-yury.github.io/array-omega-v3-scale/
