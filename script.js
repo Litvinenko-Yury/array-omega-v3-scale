@@ -2,7 +2,7 @@
 
 'use strict';
 
-/*создать 2d-массив-шаблон*/
+/*2d-массив-шаблон*/
 const baseArr = [
   [0, 0, 1, 1, 1, 1, 0, 0],
   [0, 1, 0, 0, 0, 0, 1, 0],
@@ -14,7 +14,7 @@ const baseArr = [
 ];
 
 let tempArr;
-const scaledMatrixArray = (arr, scale) => {
+const scaledArr = (arr, scale) => {
   let tempArr = []; // создал новый пустой массив
 
   arr.forEach((el) => { // для каждого элемент массива baseArr[], это "строка".
@@ -32,7 +32,7 @@ const scaledMatrixArray = (arr, scale) => {
   return tempArr;
 };
 
-const newArr = scaledMatrixArray(baseArr, 5); // вызов функции с нужными аргументами
+const newArr = scaledArr(baseArr, 5); // вызов функции с нужными аргументами
 console.log(newArr);
 
 
