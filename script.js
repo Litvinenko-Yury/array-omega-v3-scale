@@ -10,7 +10,7 @@ const baseArr = [
   [1, 0, 0, 0, 0, 0, 0, 1],
   [0, 1, 0, 0, 0, 0, 1, 0],
   [0, 0, 1, 0, 0, 1, 0, 0],
-  [1, 1, 1, 0, 0, 1, 1, 1],
+  [1, 1, 1, 0, 0, 1, 1, 1]
 ];
 
 let tempArr;
@@ -39,8 +39,6 @@ console.log(newArr);
 /************** */
 /*вывод newArr на страницу*/
 /************** */
-/*добавить разметку*/
-
 const matrix = document.querySelector('#matrix');
 
 for (let i = 0; i < newArr.length; i++) {
