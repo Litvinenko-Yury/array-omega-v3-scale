@@ -14,10 +14,10 @@ const baseArr = [
 ];
 
 const scaledArr = (arr, scale) => {
-  let tempArr = []; // создал новый пустой массив
+  const tempArr = []; // создал новый пустой массив
 
   arr.forEach((arrInternal) => { // для каждого элемента массива baseArr[], это внутренний массив-("строка").
-    let tempArrRow = []; //создал новый массив-строку.
+    const tempArrRow = []; //создал новый массив-строку.
 
     arrInternal.forEach((elemIntArr) => { //для элемента массива baseArr[], это внутренний массив-("строка"), и проходим по каждому внутреннему элементу этого массива.
       for (let i = 0; i < scale; i++) {
