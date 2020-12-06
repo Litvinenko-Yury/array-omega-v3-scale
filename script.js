@@ -13,26 +13,25 @@ const baseArr = [
   [1, 1, 1, 0, 0, 1, 1, 1]
 ];
 
-let tempArr;
 const scaledArr = (arr, scale) => {
   let tempArr = []; // создал новый пустой массив
 
-  arr.forEach((el) => { // для каждого элемент массива baseArr[], это "строка".
+  arr.forEach((arrInternal) => { // для каждого элемента массива baseArr[], это внутренний массив-("строка").
     let tempArrRow = []; //создал новый массив-строку.
 
-    el.forEach((el2) => { //берем элемент массива baseArr[]- (это "строка"), и проходим по каждому внутреннему элементу.
+    arrInternal.forEach((elemIntArr) => { //для элемента массива baseArr[], это внутренний массив-("строка"), и проходим по каждому внутреннему элементу этого массива.
       for (let i = 0; i < scale; i++) {
-        tempArrRow.push(el2); // записываем в newArrRow[] - текущий элемент нужное кол-во раз.
+        tempArrRow.push(elemIntArr); // записываем в tempArrRow[] - текущий элемент нужное кол-во раз.
       }
     });
     for (let i = 0; i < scale; i++) {
-      tempArr.push(tempArrRow); // записываем в newArr[] - массив-строку нужное кол-во раз.
+      tempArr.push(tempArrRow); // записываем в tempArr[] - массив-("строку") нужное кол-во раз.
     }
   });
   return tempArr;
 };
 
-const newArr = scaledArr(baseArr, 5); // вызов функции с нужными аргументами
+const newArr = scaledArr(baseArr, 2); // вызов функции с нужными аргументами
 console.log(newArr);
 
 
